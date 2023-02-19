@@ -5,9 +5,16 @@ module Rinstall
     class Commands < Thor
       include Thor::Actions
 
-      desc "xyz", "Install xyz"
-      def xyz
-        puts "Xyz"
+      desc "bootstrap", "Install Bootstrap"
+      def bootstrap
+        puts "abcd"
+
+        create_file "config/initializers/initializer.rb", "# Add initialization content here"
+      end
+
+      desc "foobar", "Install Foobar (test)"
+      def foobar
+        puts "Foobar"
       end
     end
   end

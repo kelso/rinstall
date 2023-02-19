@@ -1,22 +1,9 @@
 require 'thor'
+require 'rinstall/cli/commands'
 
 module Rinstall
   class CLI < Thor
-    include Thor::Actions
-
-    # desc "bootstrap", "Install Bootstrap"
-    # def bootstrap
-    #   puts "abcd"
-
-    #   create_file "config/initializers/initializer.rb", "# Add initialization content here"
-    # end
-
-    # desc "foobar", "Install Foobar (test)"
-    # def foobar
-    #   puts "Foobar"
-    # end
-
     desc "install COMMANDS", "TODO"
-    subcommand "install", Rinstall::CLI::Commands
+    subcommand "install", Rinstall::Cli::Commands
   end
 end
