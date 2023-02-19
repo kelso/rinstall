@@ -10,6 +10,8 @@ module Rinstall
         puts "abcd"
 
         create_file "config/initializers/initializer.rb", "# Add initialization content here"
+
+        # TODO
       end
 
       desc "foobar", "Install Foobar (test)"
